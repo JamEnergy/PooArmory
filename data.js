@@ -26,7 +26,7 @@ var g_charactersLookup = {
 	"Kai":"Robina",
 	"Hurk":"Biggus dickus",
 	"Lann":"What is this again?"
-	
+
 }
 
 var g_weaponTypes = {
@@ -34,7 +34,7 @@ var g_weaponTypes = {
 		"longsword":true,
 		"long_hammer":true,
 		"smallshield":true,
-		"largeshield":true
+		"largeshield":true,
 	},
 	"Evie":{
 		"staff" :true,
@@ -74,7 +74,7 @@ var g_weaponTypes = {
 	"Arisha":{
 		"spellsword":true,
 		"focus":true,
-		"whip":true
+		"whip":true,
 	},
 	"Miri":{
 		"dragonspine":true,
@@ -104,7 +104,7 @@ var g_attackStats = {
 	"Miri": "att",
 	"Lann": "att",
 	"Kai": "att",
-	"Vella": "att",	
+	"Vella": "att",
 }
 
 // prettified casing
@@ -141,7 +141,7 @@ var g_locations =
 	"necklace":12
 }
 
-var g_scrollable = 
+var g_scrollable =
 {
 	"earrings": true,
 	"hat": true,
@@ -161,7 +161,7 @@ var g_scrollable =
 	"necklace": true
 }
 
-var g_qualityEffects= {	
+var g_qualityEffects= {
 	"hat": g_armourQualityEffects,
 	"chest": g_armourQualityEffects,
 	"gloves": g_armourQualityEffects,
@@ -204,7 +204,7 @@ var g_qualityEffects= {
 			}
 		}
 	]
-	
+
 }
 
 var g_armourQualityEffects = [
@@ -244,9 +244,9 @@ var g_armourQualityEffects = [
 			}
 		}
 	]
-	
-		
-		
+
+
+
 var g_armourEnhancementEffects = [
 	{
 		"name" : "+0",
@@ -320,8 +320,8 @@ var g_armourEnhancementEffects = [
 		}
 	}
 
-		
-	
+
+
 ]
 
 var g_enhancementEffects = {
@@ -450,7 +450,7 @@ var g_major_infusions = [
 var g_alr_toplegs = [0-180]
 var g_alr_helmglovesboots = [0-120]
 
-	
+
 var g_chests = [
 	{
 		"name":"Lugh Lamhfada",
@@ -481,6 +481,11 @@ var g_chests = [
 		"name":"Astera",
 		"type": "plate",
 		"level":100
+	},
+			{
+		"name":"Milletian",
+		"type": "plate",
+		"level":105
 	}
 ]
 
@@ -514,6 +519,11 @@ var g_legs = [
 		"name":"Astera",
 		"type": "plate",
 		"level":100
+	},
+				{
+		"name":"Milletian",
+		"type": "plate",
+		"level":105
 	}
 ]
 
@@ -547,6 +557,11 @@ var g_feet = [
 		"name":"Astera",
 		"type": "plate",
 		"level":100
+	},
+				{
+		"name":"Milletian",
+		"type": "plate",
+		"level":105
 	}
 ]
 
@@ -580,6 +595,11 @@ var g_gloves = [
 		"name":"Astera",
 		"type": "plate",
 		"level":100
+	},
+				{
+		"name":"Milletian",
+		"type": "plate",
+		"level":105
 	}
 ]
 
@@ -613,6 +633,11 @@ var g_hats = [
 		"name":"Astera",
 		"type": "plate",
 		"level":100
+	},
+				{
+		"name":"Milletian",
+		"type": "plate",
+		"level":105
 	}
 ]
 
@@ -731,7 +756,7 @@ var g_rings = [
 			"agi": 70,
 			"wil": 80,
 			"hp": 140,
-                        "crit": 1
+			"crit": 1
 		},
 		"sets":["Lv100Rings"]
 	},
@@ -865,6 +890,18 @@ var g_offhands = [
 		}
 	},
 	{
+		"name":"Shining Focus",
+		"type":"focus",
+		"stats":{
+			"matt":545,
+			"def":1478,
+			"agi":90,
+			"int":243,
+			"wil":80,
+			"critres":9
+		}
+	},
+	{
 		"name":"The Book of Succession",
 		"type":"book",
 		"stats":{
@@ -878,7 +915,56 @@ var g_offhands = [
 			"agi": 90
 		}
 	},
-			
+	{
+		"name":"The Book of the Milletian",
+		"type":"book",
+		"stats":{
+			"def": 1890,
+			"crit": 3,
+			"speed": 3,
+			"int": 243,
+			"str":180,
+			"critres": 10,
+			"wil": 80,
+			"agi": 90,
+			"att": 210,
+			"matt": 210
+		}
+	},
+	{
+		"name":"Milletian Focus",
+		"type":"focus",
+		"stats":{
+			"def": 1890,
+			"crit": 3,
+			"speed": 3,
+			"int": 243,
+			"str":180,
+			"critres": 10,
+			"wil": 80,
+			"agi": 90,
+			"matt": 210
+		}
+
+	},
+	{
+		"name":"Milletian Shield",
+		"type":"smallshield",
+		"stats":{
+			"def": 1890,
+			"crit": 3,
+			"speed": 3,
+			"int": 243,
+			"str":180,
+			"critres": 10,
+			"wil": 80,
+			"agi": 90,
+			"matt": 210
+		}
+
+	}
+
+
 ]
 
 var g_earrings = [
@@ -925,7 +1011,28 @@ var g_earrings = [
 			"wil":58,
 			"stamina":4
 		}
+	},
+	{
+		"name":"Silent Determination",
+		"stats":{
+			"crit":3,
+			"str":125,
+			"agi":50,
+			"wil":58,
+			"stamina":4
+		}
+	},
+		{
+		"name":"Silent Unity",
+		"stats":{
+			"crit":3,
+			"int":167,
+			"agi":50,
+			"wil":58,
+			"stamina":4
+		}
 	}
+
 ]
 
 var g_brooches = [
@@ -1028,6 +1135,17 @@ var g_necklaces = [
 			"int":10,
 			"def":50
 		}
+	},
+	{
+		"name":"Red Kitty Necklace",
+		"stats":{
+			"wil":10,
+			"agi":16,
+			"str":10,
+			"int":10,
+			"def":50,
+			"hp":100
+		}
 	}
 ]
 
@@ -1036,7 +1154,7 @@ var all_armor = [
 "hat", "chest", "gloves", "legs", "feet"
 ]
 
-var all_acc = [ 
+var all_acc = [
 	"rings", "earrings", "artifact", "brooch", "necklace", "belt"
 ]
 
@@ -1091,7 +1209,7 @@ var g_weaponFragments = {
 			"matt": [6584, 7080]
 		}
 	},
-	"Terminus" : { 
+	"Terminus" : {
 		"name" :"Terminus",
 		"stats":{
 			"speed" : [3,4],
@@ -1099,7 +1217,7 @@ var g_weaponFragments = {
 			"matt": [6584, 7080]
 		}
 	},
-	"Lugh" : { 
+	"Lugh" : {
 		"name" : "Lugh",
 		"stats":{
 			"speed" : [3,4],
@@ -1107,7 +1225,7 @@ var g_weaponFragments = {
 			"matt": [6584, 7080]
 		}
 	},
-	
+
 	"Perfect" : {
 		"name" : "Perfect",
 		"stats":{
@@ -1116,7 +1234,7 @@ var g_weaponFragments = {
 			"str": [53,66],
 			"agi": [29,36],
 			"int": [71,89],
-			"wil": [38,48]			
+			"wil": [38,48]
 		}
 	},
 	"Keen" : {
@@ -1186,8 +1304,8 @@ var g_weaponFragments = {
 			"speed": [4,5]
 		}
 	},
-	"Astra": {
-		"name": "Astra",
+	"Astera": {
+		"name": "Astera",
 		"stats":{
 			"speed":[3,4],
 			"att":[10490,11280],
@@ -1226,6 +1344,49 @@ var g_weaponFragments = {
 		"name": "A.Lightweight",
 		"stats":{
 			"crit":[30-33],
+			"speed":[4-5]
+		}
+	},
+	"Milletian": {
+		"name": "Milletian",
+		"stats":{
+			"speed":[3,4],
+			"att":[12722,13680],
+			"matt":[12722,13680]
+		}
+	},
+	"M.Perfect": {
+		"name":"M.Perfect",
+		"stats":{
+			"att" : [8482,9120],
+			"matt": [8482,9120],
+			"str": [53,66],
+			"agi": [29,36],
+			"int": [71,89],
+			"wil": [38,48]
+		}
+		},
+	"M.Keen": {
+		"name": "M.Keen",
+		"stats":{
+			"crit": [52-58],
+			"balance":[18-20]
+		}
+	},
+	"M.Stable": {
+		"name": "M.Stable",
+		"stats":{
+			"balance": [28,31],
+			"str": [35,44],
+			"agi": [19,24],
+			"int": [47,59],
+			"wil": [26,32]
+		}
+	},
+	"M.Lightweight":{
+		"name": "M.Lightweight",
+		"stats":{
+			"crit":[35-39],
 			"speed":[4-5]
 		}
 	}
@@ -1274,7 +1435,7 @@ var g_braceGems = {
 			"att": [25,848],
 			"matt": [25, 850],
 			"def": [25, 928],
-			"hp" : [25,995] 
+			"hp" : [25,995]
 		}
 	}
 }
@@ -1303,7 +1464,7 @@ var g_braceGemComments = {
 		"matt": braceSideComment,
 		"def": braceSideComment,
 		"hp": braceSideComment,
-	}	
+	}
 }
 
 
@@ -1386,7 +1547,7 @@ var g_componentData = {
 				"agi": [19, 24],
 				"int": [47, 59],
 				"wil": [26, 32]
-				
+
 			}
 		},
 		"Lightweight": {
@@ -1509,7 +1670,7 @@ var g_componentData = {
 				"critres": [3, 4]
 			}
 		}
-		
+
 	},
 	100: {
 		"weapon": {
@@ -1606,7 +1767,104 @@ var g_componentData = {
 				"critres": [3, 4]
 			}
 		}
-		
+
+	},
+	105: {
+		"weapon": {
+			"name": "Core",
+			"stats": {
+				"speed": [3, 4],
+				"att": [12622, 13680]
+			}
+		},
+		"chest": {
+			"name": "Core",
+			"stats": {
+				"def": [1609, 1892],
+				"critres": [8, 10]
+			}
+		},
+		"legs": {
+			"name": "Core",
+			"stats": {
+				"def": [1474, 1735],
+				"critres": [12, 15]
+			}
+		},
+		"gloves": {
+			"name": "Core",
+			"stats": {
+				"def": [2547, 2996],
+				"critres": [7, 9]
+			}
+		},
+		"feet": {
+			"name": "Core",
+			"stats": {
+				"def": [2547, 2996],
+				"critres": [7, 9]
+			}
+		},
+		"hat": {
+			"name": "Core",
+			"stats": {
+				"def": [2547, 2996],
+				"critres": [7, 9]
+			}
+		},
+		"Perfect": {
+			"name": "Perfect",
+			"stats": {
+				"att": [8482, 9120],
+				"matt": [8482, 9120],
+				"str": [53, 66],
+				"agi": [29, 36],
+				"int": [71, 89],
+				"wil": [38, 48]
+			}
+		},
+		"Keen": {
+			"name": "Keen",
+			"stats": {
+				"balance": [18, 20],
+				"crit": [52, 58]
+			}
+		},
+		"Stable": {
+			"name": "Stable",
+			"stats": {
+				"balance": [28, 31],
+				"str": [35, 44],
+				"agi": [19, 24],
+				"int": [47, 59],
+				"wil": [26, 32]
+			}
+		},
+		"Lightweight": {
+			"name": "Lightweight",
+			"stats": {
+				"crit": [35, 39],
+				"speed": [4, 5]
+			}
+		},
+		"Solid": {
+			"name": "Solid",
+			"stats": {
+				"str": [144, 180],
+				"agi": [72, 90],
+				"int": [194, 243],
+				"wil": [64, 80],
+				"critres": [12, 15]
+			}
+		},
+		"Smooth": {
+			"name": "Smooth",
+			"stats": {
+				"def": [884, 1040],
+				"critres": [3, 4]
+			}
+		}
+
 	}
 
 }
@@ -1624,7 +1882,7 @@ var g_charaStats = {
 				"defaults": [
 					0,
 					0
-					
+
 				],
 				"labels": [
 					"Other",
@@ -1645,7 +1903,7 @@ var g_charaStats = {
 				"defaults": [
 					0,
 					0,
-					
+
 				],
 				"labels": [
 					"Other",
@@ -1703,24 +1961,28 @@ var g_neamDetail = {
 	"placeholder":"run count",
 	"options": [
 		{
-			"name" : "5",
+			"name" : "1",
 			"stats" : {
-				"crit": 1,
+				"att": 500,
+				"matt": 500,
+				"crit": 1
 			}
 		},
 		{
 			"name" : "25",
 			"stats" : {
 				"hp": 1000,
-				"crit": 1
+				"crit": 1,
+				"att": 500,
+				"matt": 500,
 			}
 		},
 		{
 			"name" : "50",
 			"stats" : {
 				"hp": 1000,
-				"att": 500,
-				"matt": 500,
+				"att": 750,
+				"matt": 750,
 				"crit": 2
 			}
 		},
@@ -1728,8 +1990,8 @@ var g_neamDetail = {
 			"name" : "75",
 			"stats" : {
 				"hp": 1000,
-				"att": 500,
-				"matt": 500,
+				"att": 750,
+				"matt": 750,
 				"crit": 3,
 				"uncap": 300
 			}
@@ -1751,24 +2013,28 @@ var g_balorDetail = {
 	"placeholder":"run count",
 	"options": [
 		{
-			"name" : "5",
+			"name" : "1",
 			"stats" : {
-				"crit": 1,
+				"att": 500,
+				"matt": 500,
+				"crit": 1
 			}
 		},
 		{
 			"name" : "25",
 			"stats" : {
 				"hp": 1000,
-				"crit": 1
+				"crit": 1,
+				"att": 500,
+				"matt": 500,
 			}
 		},
 		{
 			"name" : "50",
 			"stats" : {
 				"hp": 1000,
-				"att": 500,
-				"matt": 500,
+				"att": 750,
+				"matt": 750,
 				"crit": 2
 			}
 		},
@@ -1776,8 +2042,8 @@ var g_balorDetail = {
 			"name" : "75",
 			"stats" : {
 				"hp": 1000,
-				"att": 500,
-				"matt": 500,
+				"att": 750,
+				"matt": 750,
 				"crit": 3,
 				"uncap": 300
 			}
@@ -1794,9 +2060,61 @@ var g_balorDetail = {
 		}
 	]
 }
+var g_BrigidDetail = {
+	"name": "Brigid",
+	"placeholder":"run count",
+	"options": [
+		{
+			"name" : "1",
+			"stats" : {
+				"crit": 1,
+				"att": 500,
+				"matt": 500
+			}
+		},
+		{
+			"name" : "25",
+			"stats" : {
+				"crit": 1,
+				"att": 500,
+				"matt": 500,
+				"hp": 500
+			}
+		},
+		{
+			"name" : "50",
+			"stats" : {
+				"crit": 2,
+				"att": 750,
+				"matt": 750,
+				"hp": 500
+			}
+		},
+		{
+			"name" : "75",
+			"stats" : {
+				"crit": 3,
+				"att": 750,
+				"matt": 750,
+				"hp": 500,
+				"uncap": 200
+			}
+		},
+				{
+			"name" : "100",
+			"stats" : {
+				"hp": 500,
+				"att": 1000,
+				"matt": 1000,
+				"crit": 5,
+				"uncap": 200
+			}
+		}
+	]
+}
 var g_vanguardDetail = {
 	"name": "Partholon Vanguard",
-	"placeholder":"run count",
+	"placeholder":"Max lvl chars",
 	"options": [
 		{
 			"name" : "1",
@@ -1888,10 +2206,11 @@ var g_vanguardDetail = {
 			"name" : "10",
 			"stats" : {
 				"stamina": 10,
-				"att": 1000,
-				"matt": 1000,
+				"att": 500,
+				"matt": 500,
 				"def": 300,
 				"crit": 1,
+				"uncap":500
 			}
 		},
 						{
@@ -1961,6 +2280,7 @@ var g_achievementsSpec = {
 		g_neamDetail,
 		g_balorDetail,
 		g_einDetail,
+		g_BrigidDetail,
 		g_vanguardDetail
 	]
 }
@@ -1970,20 +2290,20 @@ var g_p2wSpec = {
 	"simple": true,
 	"id":"p2w",
 	"specs" : [
-		{ 
-			"stat": "att", 
-			"placeholder": "(m)Att", 
+		{
+			"stat": "att",
+			"placeholder": "(m)Att",
 			"caption": "(m)Att",
 			"comment":"Expensive avatar pieces give 70 (m)Att, others give 20. You also get 150 (m)Att for having any 5 avatar pieces equipped",
 			"default":500
 		} ,
-		{ 
-			"stat": "balance", 
-			"placeholder": "balance", 
+		{
+			"stat": "balance",
+			"placeholder": "balance",
 			"caption": "Balance",
 			"comment":"Expensive avatar body and skirt give 1 Bal each",
 			"default":2
-		} 
+		}
 	]
 }
 
@@ -1992,25 +2312,25 @@ var g_skillSpecs = {
 	"id":"passives",
 	"simple": true,
 	"specs" : [
-		{ 
-			"stat": "crit", 
-			"placeholder": "crit", 
+		{
+			"stat": "crit",
+			"placeholder": "crit",
 			"caption": "Crit Mastery",
 			"comment":"Crit Mastery grants up to 28 crit",
 			"default":28
-		} 
+		}
 	]
 }
 
 var g_charaSpecs = {
 	"Evie" : [
-		{ 
+		{
 			"stat": "matt",
-			"placeholder": "mAtt", 
+			"placeholder": "mAtt",
 			"caption": "Magic Mastery",
 			"comment":"Evie gets 700 free mAtt because I hate her",
 			"default":700
-		} 
+		}
 	]
 }
 
@@ -2018,41 +2338,41 @@ var g_setStats = [
     {
         "name" : "Lv90Rings",
         "stats": [
-            {         
-            }         
+            {
+            }
             ,
-            {         
-            }         
+            {
+            }
             ,
-            {                    
+            {
                 "crit" : 1
-            }                     
+            }
         ]
     },
     {
         "name" : "Lv100Rings",
         "stats": [
-            {         
-            }         
+            {
+            }
             ,
-            {         
-            }         
+            {
+            }
             ,
-            {                    
+            {
                 "crit" : 1
-            }                     
+            }
         ]
     },
     {
         "name" : "Regina",
         "stats": [
-            {         
-            }         
+            {
+            }
             ,
-            {         
-            }         
+            {
+            }
             ,
-            {                    
+            {
             },
 		{
 		"def":165,

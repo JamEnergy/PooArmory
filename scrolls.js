@@ -11,7 +11,7 @@ var g_scrolls = [
 		"matt":220,
 		"critres":-5
 	},
-	"prefix":true 
+	"prefix":true
 },
 {
 	"name":"Leopard",
@@ -146,7 +146,7 @@ var g_scrolls = [
 		"hp":100
 	},
 	"prefix":true
-},	
+},
 {	"name":"Master",
 	"locations":["chest"] ,
 	"stats":{
@@ -243,7 +243,7 @@ var g_scrolls = [
 		"str":-40,
 		"critres":5,
 		"hp":-450
-		
+
 	},
 	"prefix":true
 },
@@ -293,7 +293,7 @@ var g_scrolls = [
 },
 {	"name":"Sealed",
 	"locations":["offhand"] ,
-	"types":["book"],
+	"types":["book","smallshield","focus"],
 	"stats":{
 		"speed":1,
 		"def":500
@@ -302,7 +302,7 @@ var g_scrolls = [
 },
 {	"name":"Truth",
 	"locations":["offhand"] ,
-	"types":["book"],
+	"types":["book","smallshield","focus"],
 	"stats":{
 		"att":230,
 		"matt":230,
@@ -458,7 +458,7 @@ var g_scrolls = [
 	"prefix":true
 },
 {
-	"name":"Noble",
+	"name":"Incorruptible",
 	"locations":["brooch"],
 	"stats":{
 		"att": -100,
@@ -474,5 +474,51 @@ var g_scrolls = [
 		"speed": 2
 	},
 	"prefix": true
+},
+{	"name":"Wish",
+	"locations":all_acc,
+	"stats":{
+		"def": 300,
+		"stamina":2,
+		"critres":1
+	},
+	"prefix":false
+},
+{	"name":"Meaningful",
+	"locations":all_acc,
+	"stats":{
+		"speed":1,
+		"att":200,
+		"matt":200,
+		"critres":3
+	},
+	"prefix":true
+},
+
+{	"name":"Cold-Blooded",
+	"locations":["hat","legs"] ,
+	"stats":{
+		"crit":3,
+		"balance":3,
+		"speed":2,
+		"def":200,
+		"att":245,
+		"matt":245,
+		"critres":6
+	},
+	"prefix":true
+},
+{
+	"name":"Calm",
+	"locations":["weapon"],
+	"stats":{
+		"speed":4,
+		"balance":5,
+		"att":-280,
+		"matt":-280
+	},
+	"prefix":true
 }
+
+
 ]

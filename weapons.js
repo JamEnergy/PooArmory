@@ -20,7 +20,7 @@ var g_weapons = [
         "level": 90,
         "name": "Terminus Sentinel",
         "rank": "5"
-    },	
+    },
     {
         "stats": {
             "att": 10000,
@@ -31,7 +31,7 @@ var g_weapons = [
         "level": 90,
         "name": "Lugh Lamhfada",
         "rank": "5"
-    },	
+    },
 	{
         "stats": {
             "att": 10000,
@@ -62,6 +62,17 @@ var g_weapons = [
 		"crit": "74-82"
 	},
 		"level": 100,
+		"rank": "3"
+	},
+	{
+	"name": "Milletian",
+	"stats": {
+		"balance": "46-51",
+		"speed": "7-9",
+		"crit": "87-97",
+		"att/m.att": 22800
+	},
+		"level": 105,
 		"rank": "3"
 	}
 ]
